@@ -1,0 +1,117 @@
+/* --- edit_user.css --- */
+
+:root {
+    --primary-blue: #29b6f6;
+    --dark-blue: #0288d1;
+    --light-bg: #e1f5fe;
+    --white: #ffffff;
+    --text-grey: #546e7a;
+    --success: #66bb6a;
+    --danger: #ef5350;
+    --border-color: #ddd;
+}
+
+/* Container Form agar rapi dan ada bayangan */
+.form-container {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    max-width: 600px; /* Lebar maksimal form */
+    margin-top: 20px;
+    border-top: 5px solid var(--primary-blue); /* Aksen garis biru di atas */
+}
+
+/* Judul Form */
+.form-header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--light-bg);
+    padding-bottom: 10px;
+}
+
+.form-header h2 {
+    color: var(--dark-blue);
+    font-size: 20px;
+}
+
+/* Group Input (Label + Kotak Input) */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-grey);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Desain Kotak Input */
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--light-bg);
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.3s ease;
+    background-color: #f9fbff;
+}
+
+/* Efek saat input diklik */
+.form-control:focus {
+    border-color: var(--primary-blue);
+    background-color: var(--white);
+    outline: none;
+    box-shadow: 0 0 5px rgba(41, 182, 246, 0.3);
+}
+
+/* Area Tombol */
+.form-actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+/* Tombol Simpan (Override style btn-action biasa) */
+.btn-save {
+    background-color: var(--success);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.btn-save:hover {
+    background-color: #43a047;
+    transform: translateY(-2px);
+}
+
+/* Tombol Batal */
+.btn-cancel {
+    background-color: #cfd8dc;
+    color: var(--text-grey);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.btn-cancel:hover {
+    background-color: #b0bec5;
+    color: #37474f;
+}
